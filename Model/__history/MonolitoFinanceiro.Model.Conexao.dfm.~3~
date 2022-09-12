@@ -1,0 +1,15 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 327
+  Width = 528
+  object SQLConexao: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Dev\EstudoDelphi\MonolitoFinanceiro\db\SistemaFinanc' +
+        'eiro.db'
+      'DriverID=SQLite')
+    LoginPrompt = False
+    Left = 88
+    Top = 56
+  end
+end

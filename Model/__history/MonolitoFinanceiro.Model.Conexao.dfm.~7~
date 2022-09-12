@@ -1,0 +1,24 @@
+object dmConexao: TdmConexao
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 327
+  Width = 528
+  object SQLConexao: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Dev\EstudoDelphi\MonolitoFinanceiro\db\SistemaFinanc' +
+        'eiro.db'
+      'LockingMode=Normal'
+      'DriverID=SQLite')
+    LoginPrompt = False
+    Left = 88
+    Top = 56
+  end
+  object FDQuery1: TFDQuery
+    Connection = SQLConexao
+    SQL.Strings = (
+      'Select  id,nome  from usuarios')
+    Left = 248
+    Top = 144
+  end
+end
